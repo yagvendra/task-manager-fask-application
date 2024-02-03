@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <a href="/add_task">Add Task</a>
+    <div id="tasks">
+        {% for task in tasks %}
+            <div class="task">
+                <h2>{{ task.title }}</h2>
+                <p>{{ task.description }}</p>
+                <a href="/edit_task/{{ task.id }}">Edit</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
