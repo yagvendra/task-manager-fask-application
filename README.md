@@ -16,11 +16,11 @@ Setup
 
 Clone the repository:
 
-git clone https://github.com/yagvendra/task-manager-fask-application.git
+   git clone https://github.com/yagvendra/task-manager-fask-application.git
 
 Navigate to the project directory:
 
-cd task-manager-fask-application
+   cd task-manager-fask-application
 
 Install dependencies:
 
